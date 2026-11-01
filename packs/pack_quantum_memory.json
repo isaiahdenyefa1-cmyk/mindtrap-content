@@ -1,0 +1,116 @@
+{
+  "packId": "pack_quantum_memory",
+  "name": "Quantum Matrix",
+  "version": 1,
+  "minEngineVersion": 1,
+  "isPremium": false,
+  "levels": [
+    {
+      "id": "qm_1",
+      "category": "MEMORY",
+      "title": "Subatomic Wave Pulse",
+      "prompt": "Memorize the 5-step linear perimeter wave traversing across the top row and descending along the right flank.",
+      "options": [
+        "Pattern Complete"
+      ],
+      "correctIndex": 0,
+      "hint": "Trace top-left (0) to top-right (2), then straight down to bottom-right (8).",
+      "explanation": "Subatomic sync locked! You traced the 5-node perimeter wave with zero phase variance.",
+      "difficulty": "Medium",
+      "memorySequence": [
+        0,
+        1,
+        2,
+        5,
+        8
+      ]
+    },
+    {
+      "id": "qm_2",
+      "category": "MEMORY",
+      "title": "The Hypercube Shift",
+      "prompt": "Originating in the center core (4), this pulse discharges outward to all four diagonal corners in an X-pattern.",
+      "options": [
+        "Pattern Complete"
+      ],
+      "correctIndex": 0,
+      "hint": "Center first (4), then top-left (0), bottom-right (8), top-right (2), bottom-left (6).",
+      "explanation": "Spatial resonance verified! You accurately mapped the hypercube diagonal expansion.",
+      "difficulty": "Medium",
+      "memorySequence": [
+        4,
+        0,
+        8,
+        2,
+        6
+      ]
+    },
+    {
+      "id": "qm_3",
+      "category": "MEMORY",
+      "title": "Quantum Entanglement Spiral",
+      "prompt": "A 7-stage inward-outward vortex sweeping across cardinal nodes and looping back to the origin.",
+      "options": [
+        "Pattern Complete"
+      ],
+      "correctIndex": 0,
+      "hint": "Trace: top-left (0), center (4), bottom-right (8), bottom-mid (7), bottom-left (6), mid-left (3), top-left (0).",
+      "explanation": "Vortex stabilized! 7 sequential quantum coordinate transitions memorized perfectly.",
+      "difficulty": "Hard",
+      "memorySequence": [
+        0,
+        4,
+        8,
+        7,
+        6,
+        3,
+        0
+      ]
+    },
+    {
+      "id": "qm_4",
+      "category": "MEMORY",
+      "title": "Synapse Infinity Loop",
+      "prompt": "A double-diamond frequency loop crossing repeatedly through the central gate (node 4).",
+      "options": [
+        "Pattern Complete"
+      ],
+      "correctIndex": 0,
+      "hint": "Notice how node 4 serves as the central anchor intersection after every wing.",
+      "explanation": "Synaptic pathways linked! High-density frequency recall achieved without latency.",
+      "difficulty": "Hard",
+      "memorySequence": [
+        3,
+        4,
+        5,
+        2,
+        4,
+        6,
+        3
+      ]
+    },
+    {
+      "id": "qm_5",
+      "category": "MEMORY",
+      "title": "Superposition Cascade",
+      "prompt": "An 8-stage harmonic resonance alternating between cardinal axes and extreme corners of the matrix.",
+      "options": [
+        "Pattern Complete"
+      ],
+      "correctIndex": 0,
+      "hint": "First the cardinal ring (1, 5, 7, 3), followed immediately by the diagonal corner ring (0, 8, 2, 6).",
+      "explanation": "Grandmaster neuro-retention! An 8-step quantum superposition sequence flawlessly reproduced.",
+      "difficulty": "Master Mind",
+      "memorySequence": [
+        1,
+        5,
+        7,
+        3,
+        0,
+        8,
+        2,
+        6
+      ]
+    }
+  ]
+}

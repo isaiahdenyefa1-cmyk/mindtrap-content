@@ -1,0 +1,89 @@
+{
+  "packId": "pack_lateral_horizons",
+  "name": "Lateral Horizons",
+  "version": 1,
+  "minEngineVersion": 1,
+  "isPremium": false,
+  "levels": [
+    {
+      "id": "lh_1",
+      "category": "CREATIVE",
+      "title": "The Dual Hourglass Calibration",
+      "prompt": "You need to measure exactly 9 minutes of boiling time, but you only possess a 4-minute hourglass and a 7-minute hourglass. What is the most efficient sequence to measure exactly 9 minutes?",
+      "options": [
+        "Start both together; when 4m ends turn it immediately, when 7m ends start timing boiling (measures 1m), then run 4m twice (1 + 4 + 4 = 9m)",
+        "Run the 7m hourglass once, then run half of the 4m hourglass by eye",
+        "Run the 4m hourglass twice, then guess the extra minute",
+        "It is mathematically impossible to measure 9 minutes with 4 and 7 minute timers"
+      ],
+      "correctIndex": 0,
+      "hint": "Consider tracking the difference between timers running concurrently before initiating the egg boiling.",
+      "explanation": "Start both at time 0. At min 4, flip 4m (3m left in 7m). At min 7, the 7m timer empties while 4m has 1m of sand left. Start boiling now! That remaining sand runs for 1 min. Flip 4m twice more (1 + 4 + 4 = 9 min)!",
+      "difficulty": "Tricky"
+    },
+    {
+      "id": "lh_2",
+      "category": "CREATIVE",
+      "title": "The Blindfold Card Partition",
+      "prompt": "You are blindfolded in a pitch-black room with a standard 52-card deck. Exactly 10 cards are face up, and 42 are face down. Without seeing or feeling the face orientation, how can you split the cards into two piles such that both piles contain the exact same number of face-up cards?",
+      "options": [
+        "Take any 10 cards to form Pile A, leave 42 in Pile B, and flip every card in Pile A upside down",
+        "Deal cards into two piles of 26 and flip the first 5 cards of each pile",
+        "Shuffle the deck until probability equalizes both halves to 5 face-up cards",
+        "It cannot be done without feeling the embossed ink or using light"
+      ],
+      "correctIndex": 0,
+      "hint": "Algebraic complement: If Pile A has k face-up cards out of 10, how many face-up cards remain in Pile B? What happens if you invert Pile A?",
+      "explanation": "Suppose your 10-card pile has k face-up cards. Then it has (10 - k) face-down cards, and the remaining 42-card pile contains (10 - k) face-up cards. When you flip all 10 cards in Pile A, its (10 - k) face-down cards become face-up! Both piles now have exactly (10 - k) face-up cards!",
+      "difficulty": "Master Mind"
+    },
+    {
+      "id": "lh_3",
+      "category": "CREATIVE",
+      "title": "The Torrential Downpour",
+      "prompt": "A man walks through an open field during a torrential thunderstorm. He is wearing no hat, carrying no umbrella, and has no coat or canopy above him. His clothes become completely soaked, yet not a single hair on his head gets wet. Why?",
+      "options": [
+        "He is completely bald",
+        "He walked under a dense tree canopy",
+        "He was wearing an invisible waterproof helmet",
+        "The rain evaporated before touching his scalp"
+      ],
+      "correctIndex": 0,
+      "hint": "Consider the literal premise: why would someone have zero wet hairs?",
+      "explanation": "The man is completely bald! Having no hair on his head, not a single hair could possibly get wet.",
+      "difficulty": "Classic Lateral"
+    },
+    {
+      "id": "lh_4",
+      "category": "CREATIVE",
+      "title": "The Gold Bar Displacement",
+      "prompt": "A toy boat loaded with heavy solid gold bars floats in a small swimming pool. If the gold bars are tossed overboard into the water and sink to the bottom of the pool, what happens to the water level of the pool?",
+      "options": [
+        "The water level falls",
+        "The water level rises",
+        "The water level remains exactly unchanged",
+        "The pool overflows due to turbulent ripples"
+      ],
+      "correctIndex": 0,
+      "hint": "Archimedes' Principle: While floating in the boat, the gold displaces its WEIGHT in water. On the bottom, it displaces only its VOLUME.",
+      "explanation": "While in the boat, dense gold displaces water equal to its huge weight (a large volume of water). Sunk at the bottom, gold only displaces water equal to its own small physical volume. Thus, the pool's water level falls!",
+      "difficulty": "Mind Bender"
+    },
+    {
+      "id": "lh_5",
+      "category": "CREATIVE",
+      "title": "The Mirror and Table Chamber",
+      "prompt": "You wake up trapped in a sealed concrete bunker with no doors, windows, vents, or seams. The room contains only a solid wooden table and a large glass mirror mounted on the wall. According to the legendary lateral riddle, how do you escape?",
+      "options": [
+        "Look in the mirror to see what you saw, take the saw, cut the table in half, put two halves together to make a whole (hole), and jump through the hole!",
+        "Smash the mirror to produce a sharp shard, and dig through 5 feet of concrete",
+        "Dismantle the wooden table into firewood to burn down the bunker",
+        "Stand on the table to reach an invisible psychic ceiling hatch"
+      ],
+      "correctIndex": 0,
+      "hint": "This classic linguistic lateral puzzle relies on wordplay homophones.",
+      "explanation": "You look in the mirror to see what you saw; take the 'saw'; cut the table in two halves; two halves make a 'whole' (hole); then crawl out through the hole!",
+      "difficulty": "Legendary Riddle"
+    }
+  ]
+}

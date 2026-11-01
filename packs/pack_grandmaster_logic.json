@@ -1,0 +1,169 @@
+{
+  "packId": "pack_grandmaster_logic",
+  "name": "Grandmaster Paradoxes",
+  "version": 1,
+  "minEngineVersion": 1,
+  "isPremium": true,
+  "levels": [
+    {
+      "id": "gm_1",
+      "category": "LOGIC",
+      "title": "Cheryl's Birthday Deduction",
+      "prompt": "Albert and Bernard want to know Cheryl's birthday from 10 dates: May 15, May 16, May 19, June 17, June 18, July 14, July 16, August 14, August 15, August 17. Cheryl tells Albert ONLY the month, and Bernard ONLY the day.\nAlbert: 'I don't know Cheryl's birthday, but I know Bernard doesn't know either.'\nBernard: 'At first I didn't know, but now I know.'\nAlbert: 'Then I also know Cheryl's birthday.'\nWhen is Cheryl's birthday?",
+      "options": [
+        "July 16",
+        "August 17",
+        "May 19",
+        "June 17"
+      ],
+      "correctIndex": 0,
+      "hint": "Analyze Albert's first sentence: What months contain unique days that would let Bernard know immediately?",
+      "explanation": "Days 19 and 18 are unique (May 19, June 18). Albert knows Bernard doesn't know, so month cannot be May or June! This leaves July (14, 16) and August (14, 15, 17). Bernard now knows, so the day cannot be 14 (shared). Remaining: July 16, August 15, August 17. Albert now knows, so the month cannot be August (which still has two choices). Hence, July 16!",
+      "difficulty": "Master Mind"
+    },
+    {
+      "id": "gm_2",
+      "category": "LOGIC",
+      "title": "The 100 Green-Eyed Monks",
+      "prompt": "On an island, 100 monks have green eyes and 100 have brown eyes. No monk knows their own eye color, and they cannot speak. Any monk who discovers they have green eyes must leave on the midnight boat. A visitor announces publicly to all monks: 'At least one of you has green eyes.' On which midnight do the green-eyed monks leave?",
+      "options": [
+        "On the 100th midnight, all 100 green-eyed monks leave together",
+        "On the 1st midnight, exactly 1 monk leaves",
+        "None ever leave because everyone already knew someone had green eyes",
+        "On the 50th midnight"
+      ],
+      "correctIndex": 0,
+      "hint": "Use mathematical induction: What happens if there were only 1 green-eyed monk? What if there were 2?",
+      "explanation": "Common knowledge induction: If 1 monk had green eyes, he would see 0 others and leave on night 1. If 2, each sees 1 other, expects him to leave night 1; when he doesn't, both leave night 2. By induction, for n = 100 green-eyed monks, all 100 realize their eye color and depart simultaneously on midnight 100!",
+      "difficulty": "Master Mind"
+    },
+    {
+      "id": "gm_3",
+      "category": "LOGIC",
+      "title": "The Two Envelopes Dilemma",
+      "prompt": "You are given two indistinguishable envelopes. One contains twice as much money as the other ($X and $2X). You pick Envelope A and open it, finding $100. You are offered the chance to switch to Envelope B. The other envelope contains either $50 or $200 with equal 50% probability. Expected value calculation: 0.5 * $50 + 0.5 * $200 = $125 > $100. Does switching genuinely increase expected gain in all cases?",
+      "options": [
+        "No; the paradox arises because the prior distribution of money cannot be uniformly infinite; switching gives 0 net gain across all realizations",
+        "Yes, switching always yields a guaranteed +25% expected return indefinitely",
+        "No, Envelope B always contains less money",
+        "Yes, because 2X is mathematically larger than X/2"
+      ],
+      "correctIndex": 0,
+      "hint": "Can you have an improper uniform prior over all positive real numbers?",
+      "explanation": "The Two Envelopes Paradox exploits an impossible uniform probability distribution across all positive numbers. In any real-world bounded pot, the probability of the larger value given a high observation is not 50/50. Across both envelopes, expected payoff of switching is zero!",
+      "difficulty": "Grandmaster"
+    },
+    {
+      "id": "gm_4",
+      "category": "LOGIC",
+      "title": "The Poisoned Goblets Matrix",
+      "prompt": "1,024 chalices are laid out, exactly one containing a lethal poison. You have 10 prisoners who can drink mixtures of chalices simultaneously. The poison takes effect precisely 1 hour later. What is the minimum number of hours needed to determine the exact poisoned chalice with certainty?",
+      "options": [
+        "1 hour (using binary index assignments across the 10 prisoners)",
+        "10 hours (testing subsets sequentially)",
+        "2 hours",
+        "1,024 hours"
+      ],
+      "correctIndex": 0,
+      "hint": "2^10 = 1,024. Can each chalice number correspond to a 10-bit binary code?",
+      "explanation": "Number the chalices 0 to 1,023 in 10-bit binary (from 0000000000 to 1111111111). Assign prisoner i (0 to 9) to drink from every chalice where bit i is 1. One hour later, the binary combination of fallen prisoners directly reveals the exact chalice in just 1 hour!",
+      "difficulty": "Master Mind"
+    },
+    {
+      "id": "gm_5",
+      "category": "LOGIC",
+      "title": "The Sleeping Beauty Credence",
+      "prompt": "Sleeping Beauty is put to sleep on Sunday. A fair coin is flipped. If Heads, she is awakened and interviewed on Monday only. If Tails, she is awakened and interviewed on Monday, put back to sleep with her memory erased, and awakened and interviewed again on Tuesday. Whenever she is awakened and asked 'What is your credence that the coin landed Heads?', what should her rational answer be?",
+      "options": [
+        "1/3 (The 'Thirder' position: 3 possible awakenings across outcomes, 1 of which is Heads)",
+        "1/2 (The 'Halfer' position: The coin flip was fair, so P(Heads) is strictly 50%)",
+        "1/4",
+        "2/3"
+      ],
+      "correctIndex": 0,
+      "hint": "There are 3 indistinguishable observer-moments: (Heads, Monday), (Tails, Monday), (Tails, Tuesday).",
+      "explanation": "Under the Thirder argument, her situation has three centered possibilities: H-Mon, T-Mon, and T-Tue. Since these three awakening experiences are epistemic duplicates and equally probable under repeated runs, her credence that the current awakening is Heads is 1/3!",
+      "difficulty": "Philosophical Enigma"
+    },
+    {
+      "id": "gm_6",
+      "category": "OBSERVATION",
+      "title": "The Barber of Seville",
+      "prompt": "In Seville, an ordinance decrees that the town barber shaves all men, and only those men, who do not shave themselves. Who shaves the barber?",
+      "options": [
+        "The premise is a logical contradiction (Russell's Paradox); no such barber can mathematically exist",
+        "The barber's apprentice shaves him",
+        "He shaves himself every morning",
+        "The mayor of Seville shaves him"
+      ],
+      "correctIndex": 0,
+      "hint": "If the barber shaves himself, he violates the rule. If he doesn't shave himself, the rule requires him to shave himself.",
+      "explanation": "Russell's Paradox in set theory: If he shaves himself, he belongs to the set of men who shave themselves, whom he must NOT shave. If he does not, he must shave himself. The barber's condition is an insoluble logical contradiction!",
+      "difficulty": "Paradox Trap"
+    },
+    {
+      "id": "gm_7",
+      "category": "OBSERVATION",
+      "title": "The Unexpected Hanging Paradox",
+      "prompt": "A judge tells a prisoner: 'You will be hanged at noon on one weekday next week (Mon-Fri), but the execution will be a complete surprise; you will not know the day until the executioner knocks at your cell.' The prisoner deduces: 'It can't be Friday, because by Thursday noon I would know. So Friday is eliminated. By the same logic, Thursday, Wednesday, Tuesday, and Monday are eliminated! The execution is impossible!' On Wednesday noon, the executioner knocks unexpectedly. Did the judge speak truthfully?",
+      "options": [
+        "Yes, the judge was completely truthful: the execution occurred and was an unexpected surprise",
+        "No, the judge committed an illegal perjury",
+        "No, because the prisoner's mathematical deduction was infallible",
+        "Yes, but only because Friday was a holiday"
+      ],
+      "correctIndex": 0,
+      "hint": "The prisoner convinced himself it could not happen on any day. Therefore, when it happened, was he surprised?",
+      "explanation": "The Unexpected Hanging Paradox: The prisoner's recursive elimination led him to conclude the execution could never occur. Thus, when the executioner arrived on Wednesday, the prisoner was completely surprised, fulfilling the judge's exact prophecy!",
+      "difficulty": "Epistemic Paradox"
+    },
+    {
+      "id": "gm_8",
+      "category": "CREATIVE",
+      "title": "The Two Non-Uniform Fuses",
+      "prompt": "You are given two fuses (ropes). Each fuse burns for exactly 60 minutes from end to end, but the ropes are completely non-uniform (some sections burn fast, some slow). You have a lighter. How can you measure exactly 45 minutes?",
+      "options": [
+        "Light Fuse 1 at both ends, and Fuse 2 at one end simultaneously; when Fuse 1 burns out (30m), light the other end of Fuse 2 (measures +15m = 45m)",
+        "Cut Fuse 1 into 3/4 length and light it from one end",
+        "Light both fuses together and extinguish one at 45 minutes by checking rope length",
+        "Fold Fuse 1 in half twice to make four segments"
+      ],
+      "correctIndex": 0,
+      "hint": "Lighting a fuse at BOTH ends makes it burn out in exactly half the time (30 min), regardless of non-uniform burn rates.",
+      "explanation": "Light Fuse 1 at both ends and Fuse 2 at one end. Fuse 1 will burn out in exactly 30 minutes. At that exact moment, Fuse 2 has 30 minutes of burn time remaining. Immediately light the second end of Fuse 2! The remaining half burns out in 15 minutes: 30 + 15 = 45 minutes!",
+      "difficulty": "Master Mind"
+    },
+    {
+      "id": "gm_9",
+      "category": "CREATIVE",
+      "title": "The 64-Coin Chessboard Communication",
+      "prompt": "The Warden places 64 coins on an 8x8 chessboard, randomly heads or tails. One square contains a secret exit key. Prisoner 1 sees the board, is shown the secret square (0 to 63), and MUST flip exactly ONE coin on the board. Prisoner 1 leaves, and Prisoner 2 enters with no communication except inspecting the board. Can they guarantee Prisoner 2 identifies the key?",
+      "options": [
+        "Yes, by using binary XOR sum (parity bit check) of the indices of all heads coins, flipping the coin that changes the total XOR to the key index",
+        "No, 1 coin flip cannot convey 6 bits of information across 64 random coins",
+        "Only if the warden allows flipping up to 6 coins",
+        "Yes, but only if all coins start facing Heads"
+      ],
+      "correctIndex": 0,
+      "hint": "64 squares can be represented by 6 bits (0 to 63). What mathematical operation on bit vectors is invertible by a single coordinate flip?",
+      "explanation": "Information theory triumph: Calculate S = the XOR sum of all coordinates containing Heads. If the target key is K, Prisoner 1 flips the coin at index F = S XOR K. The new XOR sum of heads on the board will be S XOR F = S XOR (S XOR K) = K. Prisoner 2 simply computes the XOR sum of all Heads and finds K!",
+      "difficulty": "Grandmaster"
+    },
+    {
+      "id": "gm_10",
+      "category": "LOGIC",
+      "title": "Newcomb's Rational Paradox",
+      "prompt": "An omniscient alien Super-Predictor presents two boxes: Box A contains $1,000. Box B contains either $1,000,000 or $0. You may choose to take ONLY Box B ('one-box'), or BOTH Box A and Box B ('two-box'). The Predictor has already made its prediction yesterday: if it predicted you would one-box, it put $1,000,000 in Box B. If it predicted you would two-box, it left Box B empty. The Predictor has never been wrong in 1,000 trials. What is the fundamental conflict in decision theory?",
+      "options": [
+        "Causal Decision Theory (Dominance: Box B is already fixed, so taking both gives $1,000 more) versus Evidential Decision Theory (Expected Utility: one-boxers walk away with $1,000,000)",
+        "The Super-Predictor violated the laws of thermodynamic entropy",
+        "One-boxing is always mathematically irrational under all frameworks",
+        "Two-boxing always triggers a temporal time-loop paradox"
+      ],
+      "correctIndex": 0,
+      "hint": "Consider the clash between the Principle of Dominance and the Principle of Maximizing Expected Utility.",
+      "explanation": "Newcomb's Paradox demonstrates the classic schism between Causal Decision Theory (which argues the contents of Box B are already physically fixed, so two-boxing dominates) and Evidential Decision Theory (which notes that choosing only Box B provides overwhelming evidence of winning $1,000,000)!",
+      "difficulty": "Grandmaster"
+    }
+  ]
+}
