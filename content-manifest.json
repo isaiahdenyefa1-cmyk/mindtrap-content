@@ -1,0 +1,55 @@
+{
+  "manifestVersion": 1,
+  "engineVersion": 1,
+  "generatedAt": "2026-10-31T12:00:00Z",
+  "packs": [
+    {
+      "id": "pack_lateral_horizons",
+      "name": "Lateral Horizons",
+      "description": "5 mind-bending lateral riddles and paradoxical deductions designed to shatter common assumptions.",
+      "version": 1,
+      "minEngineVersion": 1,
+      "isPremium": false,
+      "levelCount": 5,
+      "downloadSize": 5591,
+      "downloadUrl": "https://raw.githubusercontent.com/isaiahdenyefa1-cmyk/mindtrap-content/main/packs/pack_lateral_horizons.json",
+      "sha256": "b068bff7ae31d2ef4b1f7ad7e0edc5e73c520ea4a7919cee2994989192baef93"
+    },
+    {
+      "id": "pack_quantum_memory",
+      "name": "Quantum Matrix",
+      "description": "5 high-intensity neural pulse challenges across the 3x3 synapse matrix to test working spatial memory.",
+      "version": 1,
+      "minEngineVersion": 1,
+      "isPremium": false,
+      "levelCount": 5,
+      "downloadSize": 3410,
+      "downloadUrl": "https://raw.githubusercontent.com/isaiahdenyefa1-cmyk/mindtrap-content/main/packs/pack_quantum_memory.json",
+      "sha256": "9159967dc78098cec03942aadb3b5911a29f56299f8cb6852e7353c51dc2cb01"
+    },
+    {
+      "id": "pack_cryptic_logic",
+      "name": "Cryptic Logic Expansion",
+      "description": "5 intricate deductive puzzles challenging probability, game theory, and truth-teller paradoxes.",
+      "version": 1,
+      "minEngineVersion": 1,
+      "isPremium": false,
+      "levelCount": 5,
+      "downloadSize": 6019,
+      "downloadUrl": "https://raw.githubusercontent.com/isaiahdenyefa1-cmyk/mindtrap-content/main/packs/pack_cryptic_logic.json",
+      "sha256": "6151e2fff5099309797f7dd6658362d3d0a45d2e178f1c0b0e28c813f82a6347"
+    },
+    {
+      "id": "pack_grandmaster_logic",
+      "name": "Grandmaster Paradoxes",
+      "description": "10 elite multi-step deduction labyrinths for seasoned puzzle champions.",
+      "version": 1,
+      "minEngineVersion": 1,
+      "isPremium": true,
+      "levelCount": 10,
+      "downloadSize": 12894,
+      "downloadUrl": "https://raw.githubusercontent.com/isaiahdenyefa1-cmyk/mindtrap-content/main/packs/pack_grandmaster_logic.json",
+      "sha256": "9774867def1e27807302d7bc0f44d0f8f11833bfd4e97b52bd6751e433b8b6d3"
+    }
+  ]
+}
