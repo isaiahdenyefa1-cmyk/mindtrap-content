@@ -3,7 +3,7 @@
   "name": "Grandmaster Paradoxes",
   "version": 1,
   "minEngineVersion": 1,
-  "isPremium": true,
+  "isPremium": false,
   "levels": [
     {
       "id": "gm_1",
